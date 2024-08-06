@@ -2,15 +2,12 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore'
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDeOpuonSBR5u0YjAYJBZ9wlcyFj3p7T8A",
-  authDomain: "pantryapphs.firebaseapp.com",
-  projectId: "pantryapphs",
-  storageBucket: "pantryapphs.appspot.com",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: "638816312668",
   appId: "1:638816312668:web:ebf1c2ae6898c750ed3599"
 };
